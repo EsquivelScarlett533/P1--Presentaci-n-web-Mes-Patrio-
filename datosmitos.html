@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitos y Curiosidades - Mes Patrio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #b58d6f;
+            color: #1a1a2e;
+            text-align: center;
+            padding: 15px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #1a1a2e;
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s ease;
+        }
+
+        header nav a:hover {
+            color: #ffffff;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .left-column {
+            background-color: #72b05b;
+            flex: 1;
+        }
+
+        .center-column {
+            background-color: #f7f7f7;
+            flex: 2;
+            padding: 30px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: #1a1a2e;
+            margin-top: 10px;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        .center-column ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .center-column li {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #222222;
+            margin-bottom: 8px;
+        }
+
+        .right-column {
+            background-color: #eb7463;
+            flex: 1;
+        }
+
+        footer {
+            background-color: #b58d6f;
+            color: #1a1a2e;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.85rem;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+            }
+            .left-column, .center-column, .right-column {
+                width: 100%;
+            }
+            .left-column, .right-column {
+                min-height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con título principal de la página y el menú de navegación -->
+    <header>
+        <h1>MITOS Y CURIOSIDADES</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="personajes.html">PERSONAJES</a></li>
+                <li><a href="fechas.html">FECHAS IMPORTANTES</a></li>
+                <li><a href="datosmitos.html">DATOS CURIOSOS Y MITOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor principal que simula la bandera mexicana (Verde, Blanco, Rojo) -->
+    <div class="main-container">
+        
+        <!-- Franja izquierda de color verde -->
+        <div class="left-column"></div>
+
+        <!-- Franja central con la información del sitio -->
+        <main class="center-column">
+            
+            <!-- Lista de creencias populares desmentidas sobre la historia de México -->
+            <h2 class="section-title">Mitos de la Independencia</h2>
+            <ul>
+                <li><strong>El Grito nocturno:</strong> El evento ocurrió realmente la madrugada del 16 de septiembre y no la noche del 15.</li>
+                <li><strong>El campanero:</strong> Quien tocó la campana de Dolores fue José Galván, no el cura Miguel Hidalgo.</li>
+                <li><strong>El Pípila:</strong> Este personaje no existió individualmente; representa el esfuerzo colectivo de los mineros.</li>
+                <li><strong>El estandarte:</strong> Hidalgo tomó la imagen de la Virgen de Guadalupe de imprevisto en el santuario de Atotonilco.</li>
+                <li><strong>El reconocimiento español:</strong> España aceptó oficialmente la independencia de México hasta 1836, quince años después de 1821.</li>
+            </ul>
+
+            <!-- Lista de acontecimientos históricos poco conocidos y hechos curiosos -->
+            <h2 class="section-title">Datos curiosos</h2>
+            <ul>
+                <li><strong>Cumpleaños presidencial:</strong> Porfirio Díaz pasó el festejo al 15 de septiembre para que coincidiera con su cumpleaños.</li>
+                <li><strong>Apoyo al rey:</strong> El movimiento inició apoyando al rey Fernando VII ante la invasión francesa en España.</li>
+                <li><strong>Cabezas expuestas:</strong> Las cabezas de los cuatro primeros líderes insurgentes estuvieron colgadas 10 años como advertencia.</li>
+                <li><strong>El Imperio:</strong> México nació formalmente como el Imperio Mexicano y no como una república.</li>
+                <li><strong>Chiles en nogada:</strong> Este platillo fue creado en Puebla por monjas agustinas para festejar a Agustín de Iturbide.</li>
+            </ul>
+            
+        </main>
+
+        <!-- Franja derecha de color rojo -->
+        <div class="right-column"></div>
+    </div>
+
+    <!-- Pie de página con los datos escolares y del alumno -->
+    <footer>
+        <p>ESQUIVEL CANO NATALY SCARLETT</p>
+        <p>24308051280533</p>
+        <p>5I</p>
+        <p>CONSTRUYE APLICACIONES WEB</p>
+    </footer>
+
+</body>
+</html>

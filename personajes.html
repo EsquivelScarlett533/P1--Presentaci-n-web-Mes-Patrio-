@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes - Mes Patrio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #b58d6f;
+            color: #1a1a2e;
+            text-align: center;
+            padding: 15px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #1a1a2e;
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s ease;
+        }
+
+        header nav a:hover {
+            color: #ffffff;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .left-column {
+            background-color: #72b05b;
+            flex: 0.8;
+        }
+
+        .characters-container {
+            flex: 3.2;
+            display: flex;
+            width: 100%;
+        }
+
+        .center-column {
+            background-color: #f7f7f7;
+            flex: 1;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .right-column {
+            background-color: #eb7463;
+            flex: 1;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            line-height: 1.4;
+            color: #000000;
+        }
+
+        /* Estilo unificado para las imágenes: más grandes y sin bordes negros */
+        .character-img {
+            width: 140px;
+            height: 145px;
+            object-fit: cover;
+            border-radius: 8px; /* Bordes redondeados suaves opcionales */
+            border: none; /* Elimina cualquier borde */
+            flex-shrink: 0;
+        }
+
+        footer {
+            background-color: #b58d6f;
+            color: #1a1a2e;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.85rem;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 900px) {
+            .main-container, .characters-container {
+                flex-direction: column;
+            }
+            .left-column, .center-column, .right-column {
+                width: 100%;
+            }
+            .left-column {
+                min-height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PERSONAJES</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="personajes.html">PERSONAJES</a></li>
+                <li><a href="fechas.html">FECHAS IMPORTANTES</a></li>
+                <li><a href="datosmitos.html">DATOS CURIOSOS Y MITOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="left-column"></div>
+
+        <div class="characters-container">
+            <main class="center-column">
+                <div class="card">
+                    <img src="hidalgo.jpg" alt="Miguel Hidalgo" class="character-img">
+                    <p><strong>Miguel Hidalgo y Costilla:</strong> Conocido como el Padre de la Patria. Sacerdote y militar insurgente que inició el movimiento independentista.</p>
+                </div>
+
+                <div class="card">
+                    <img src="morelos.jpg" alt="José María Morelos" class="character-img">
+                    <p><strong>José María Morelos y Pavón:</strong> Llevó a cabo las campañas militares en el sur del país y sentó las bases institucionales del movimiento insurgente.</p>
+                </div>
+
+                <div class="card">
+                    <img src="josefa.jpg" alt="Josefa Ortiz de Domínguez" class="character-img">
+                    <p><strong>Josefa Ortiz de Domínguez:</strong> La Corregidora de Querétaro, figura clave de la conspiración que avisó a Hidalgo sobre la marcha de las tropas realistas.</p>
+                </div>
+            </main>
+
+            <div class="right-column">
+                <div class="card">
+                    <img src="guerrero.jpg" alt="Vicente Guerrero" class="character-img">
+                    <p><strong>Vicente Guerrero:</strong> General insurgente que mantuvo viva la resistencia en las montañas del sur y pactó la paz con Agustín de Iturbide.</p>
+                </div>
+
+                <div class="card">
+                    <img src="iturbide.jpg" alt="Agustín de Iturbide" class="character-img">
+                    <p><strong>Agustín de Iturbide:</strong> Militar realista que pactó el Plan de Iguala junto a Guerrero, unificando a los ejércitos para consolidar la independencia.</p>
+                </div>
+
+                <div class="card">
+                    <img src="ignacio.jpg" alt="Ignacio Allende" class="character-img">
+                    <p><strong>Ignacio Allende:</strong> Líder de la conspiración inicial y jefe militar junto con Hidalgo durante las primeras etapas del levantamiento.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>ESQUIVEL CANO NATALY SCARLETT</p>
+        <p>24308051280533</p>
+        <p>5I</p>
+        <p>CONSTRUYE APLICACIONES WEB</p>
+    </footer>
+
+</body>
+</html>
