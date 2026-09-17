@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Patrio</title>
     <style>
+        /* Estilos generales */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -12,6 +13,7 @@
             font-family: "Comic Sans MS", "Comic Sans", cursive;
         }
 
+        /* Estructura principal del body */
         body {
             display: flex;
             flex-direction: column;
@@ -19,6 +21,7 @@
             background-color: #f4f4f4;
         }
 
+        /* Estilos del header y su navegación */
         header {
             background-color: #b58d6f;
             color: #1a1a2e;
@@ -58,6 +61,7 @@
             color: #ffffff;
         }
 
+        /* Layout de tres columnas (Bandera) */
         .main-container {
             display: flex;
             flex: 1;
@@ -106,6 +110,7 @@
             flex: 1;
         }
 
+        /* Estilos del pie de página */
         footer {
             background-color: #b58d6f;
             color: #1a1a2e;
@@ -116,6 +121,7 @@
             line-height: 1.4;
         }
 
+        /* Diseño adaptable para móviles */
         @media (max-width: 768px) {
             .main-container {
                 flex-direction: column;
@@ -141,6 +147,7 @@
 </head>
 <body>
 
+    <!-- Encabezado con menú -->
     <header>
         <h1>MES PATRIO</h1>
         <nav>
@@ -153,6 +160,7 @@
         </nav>
     </header>
 
+    <!-- Contenido principal -->
     <div class="main-container">
         <div class="left-column"></div>
         <main class="center-column">
@@ -167,6 +175,7 @@
         <div class="right-column"></div>
     </div>
 
+    <!-- Pie de página -->
     <footer>
         <p>ESQUIVEL CANO NATALY SCARLETT</p>
         <p>24308051280533</p>
