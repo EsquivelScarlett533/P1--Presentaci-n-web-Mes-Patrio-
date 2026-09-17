@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mitos y Curiosidades - Mes Patrio</title>
     <style>
+        /* Estilos generales */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -12,6 +13,7 @@
             font-family: "Comic Sans MS", "Comic Sans", cursive;
         }
 
+        /* Estructura principal del body */
         body {
             display: flex;
             flex-direction: column;
@@ -19,6 +21,7 @@
             background-color: #f4f4f4;
         }
 
+        /* Estilos del header y su navegación */
         header {
             background-color: #b58d6f;
             color: #1a1a2e;
@@ -59,6 +62,7 @@
             color: #ffffff;
         }
 
+        /* Layout de tres columnas (Bandera) */
         .main-container {
             display: flex;
             flex: 1;
@@ -79,6 +83,7 @@
             justify-content: center;
         }
 
+        /* Estilos de subtítulos y listas de mitos/curiosidades */
         .section-title {
             font-size: 1.3rem;
             color: #1a1a2e;
@@ -104,6 +109,7 @@
             flex: 1;
         }
 
+        /* Estilos del pie de página */
         footer {
             background-color: #b58d6f;
             color: #1a1a2e;
@@ -114,6 +120,7 @@
             line-height: 1.4;
         }
 
+        /* Diseño adaptable para móviles */
         @media (max-width: 768px) {
             .main-container {
                 flex-direction: column;
@@ -129,7 +136,7 @@
 </head>
 <body>
 
-    <!-- Encabezado con título principal de la página y el menú de navegación -->
+    <!-- Encabezado con menú -->
     <header>
         <h1>MITOS Y CURIOSIDADES</h1>
         <nav>
@@ -142,15 +149,11 @@
         </nav>
     </header>
 
-    <!-- Contenedor principal que simula la bandera mexicana (Verde, Blanco, Rojo) -->
+    <!-- Contenido principal -->
     <div class="main-container">
-        
-        <!-- Franja izquierda de color verde -->
         <div class="left-column"></div>
 
-        <!-- Franja central con la información del sitio -->
         <main class="center-column">
-            
             <h2 class="section-title">Mitos de la Independencia</h2>
             <ul>
                 <li><strong>El Grito nocturno:</strong> El evento ocurrió realmente la madrugada del 16 de septiembre y no la noche del 15.</li>
@@ -160,7 +163,6 @@
                 <li><strong>El reconocimiento español:</strong> España aceptó oficialmente la independencia de México hasta 1836, quince años después de 1821.</li>
             </ul>
 
-            <!-- Lista de acontecimientos históricos poco conocidos y datos curiosos -->
             <h2 class="section-title">Datos curiosos</h2>
             <ul>
                 <li><strong>Cumpleaños presidencial:</strong> Porfirio Díaz pasó el festejo al 15 de septiembre para que coincidiera con su cumpleaños.</li>
@@ -169,12 +171,12 @@
                 <li><strong>El Imperio:</strong> México nació formalmente como el Imperio Mexicano y no como una república.</li>
                 <li><strong>Chiles en nogada:</strong> Este platillo fue creado en Puebla por monjas agustinas para festejar a Agustín de Iturbide.</li>
             </ul>
-            
         </main>
 
         <div class="right-column"></div>
     </div>
 
+    <!-- Pie de página -->
     <footer>
         <p>ESQUIVEL CANO NATALY SCARLETT</p>
         <p>24308051280533</p>
