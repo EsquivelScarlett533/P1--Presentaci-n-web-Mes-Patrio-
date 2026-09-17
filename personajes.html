@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personajes - Mes Patrio</title>
     <style>
+        /* Estilos generales */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -12,6 +13,7 @@
             font-family: "Comic Sans MS", "Comic Sans", cursive;
         }
 
+        /* Estructura principal del body */
         body {
             display: flex;
             flex-direction: column;
@@ -19,6 +21,7 @@
             background-color: #f4f4f4;
         }
 
+        /* Estilos del header y su navegación */
         header {
             background-color: #b58d6f;
             color: #1a1a2e;
@@ -58,6 +61,7 @@
             color: #ffffff;
         }
 
+        /* Layout de tres columnas y contenedor de personajes */
         .main-container {
             display: flex;
             flex: 1;
@@ -93,6 +97,7 @@
             gap: 25px;
         }
 
+        /* Estilos de las tarjetas de personajes e imágenes */
         .card {
             display: flex;
             align-items: center;
@@ -114,6 +119,7 @@
             flex-shrink: 0;
         }
 
+        /* Estilos del pie de página */
         footer {
             background-color: #b58d6f;
             color: #1a1a2e;
@@ -124,6 +130,7 @@
             line-height: 1.4;
         }
 
+        /* Diseño adaptable para móviles */
         @media (max-width: 900px) {
             .main-container, .characters-container {
                 flex-direction: column;
@@ -139,6 +146,7 @@
 </head>
 <body>
 
+    <!-- Encabezado con menú -->
     <header>
         <h1>PERSONAJES</h1>
         <nav>
@@ -151,6 +159,7 @@
         </nav>
     </header>
 
+    <!-- Contenido principal con las tarjetas de personajes -->
     <div class="main-container">
         <div class="left-column"></div>
 
@@ -191,6 +200,7 @@
         </div>
     </div>
 
+    <!-- Pie de página -->
     <footer>
         <p>ESQUIVEL CANO NATALY SCARLETT</p>
         <p>24308051280533</p>
